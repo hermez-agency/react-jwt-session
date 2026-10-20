@@ -46,7 +46,7 @@ pnpm add react-jwt-session ssr-safe-storage
 `react` (18.3+ or 19) is a peer dependency; `react-resource-view` (0.12+) is an
 optional one, needed only by the [`react-jwt-session/resource-view`](#with-react-resource-view)
 helper;
-[`ssr-safe-storage`](https://github.com/SalvadorCardona/ssr-safe-storage)
+[`ssr-safe-storage`](https://github.com/hermez-agency/ssr-safe-storage)
 backs the persistence and keeps the same calls working during server-side
 rendering.
 
