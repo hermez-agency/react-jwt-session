@@ -1,5 +1,11 @@
 # react-jwt-session
 
+## 0.2.1
+
+### Patch Changes
+
+- 5a167e3: Move the package to the hermez-agency organization: author, repository, bugs and homepage now point to Hermez and hermez-agency/react-jwt-session.
+
 ## 0.2.0
 
 ### Minor Changes
