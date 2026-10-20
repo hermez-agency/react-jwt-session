@@ -271,7 +271,7 @@ sign-in, an impersonation, or anything that changes the stored profile.
 ## With react-resource-view
 
 The `react-jwt-session/resource-view` sub-path turns the session into the async
-scope authorization that [react-resource-view](https://github.com/SalvadorCardona/react-resource-view)
+scope authorization that [react-resource-view](https://github.com/hermez-agency/react-resource-view)
 0.12 expects — one line per scope:
 
 ```ts
@@ -302,6 +302,10 @@ pnpm typecheck
 pnpm lint
 pnpm build
 ```
+
+## Author
+
+A Hermez product — [hermez.dev](https://hermez.dev).
 
 ## License
 
