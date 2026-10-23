@@ -63,12 +63,21 @@ importers:
       react:
         specifier: 19.2.7
         version: 19.2.7
+      react-data-form:
+        specifier: ^0.3.2
+        version: 0.3.2(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.2.1(react@19.2.7))(react@19.2.7)(resource-registry@0.1.1)
       react-dom:
         specifier: 19.2.7
         version: 19.2.7(react@19.2.7)
+      react-mini-i18n:
+        specifier: ^0.2.1
+        version: 0.2.1(react@19.2.7)
       react-resource-view:
-        specifier: ^0.12.0
-        version: 0.12.0(@date-fns/tz@1.5.0)(@types/react@19.2.18)(react-data-form@0.1.0(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.1.0(react@19.2.7))(react@19.2.7)(resource-registry@0.1.0))(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.1.0(react@19.2.7))(react@19.2.7)(resource-registry@0.1.0)
+        specifier: ^1.2.2
+        version: 1.2.2(@date-fns/tz@1.5.0)(@types/react@19.2.18)(react-data-form@0.3.2(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.2.1(react@19.2.7))(react@19.2.7)(resource-registry@0.1.1))(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.2.1(react@19.2.7))(react@19.2.7)(resource-registry@0.1.1)
+      resource-registry:
+        specifier: ^0.1.1
+        version: 0.1.1
       tsdown:
         specifier: ^0.15.0
         version: 0.15.12(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(typescript@6.0.3)
@@ -1980,12 +1989,12 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-data-form@0.1.0:
-    resolution: {integrity: sha512-ZFdMzJY0+uRCnhWxSwK7lkwmEjjvOsuiiPgsG+gaFONXodedQw6vp6Y2GYJL75bDNoS9Y0lKYHCNE3TK0jGPzw==}
+  react-data-form@0.3.2:
+    resolution: {integrity: sha512-O4QGr0dERHhokfEgMAzmWURivftz0zb3WthM4j5kqPx8f1/VNkUf2oHergnHh1fa5Hcwgl0QsnfLWGNLzLk0Aw==}
     peerDependencies:
       react: ^18.3.0 || ^19.0.0
       react-dom: ^18.3.0 || ^19.0.0
-      react-mini-i18n: ^0.1.0
+      react-mini-i18n: ^0.1.0 || ^0.2.0
       resource-registry: ^0.1.0
       tailwindcss: ^4.0.0
     peerDependenciesMeta:
@@ -2012,8 +2021,8 @@ packages:
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
 
-  react-mini-i18n@0.1.0:
-    resolution: {integrity: sha512-krm/DwbsKMd/uD7FB9BNwQEZRGldMGRCnL9DuGoKYdTN0hhDL2PSvFRV2Nwg1SnaULW2OkdbMzNRfbHwJdRdgg==}
+  react-mini-i18n@0.2.1:
+    resolution: {integrity: sha512-KHYVMfTANxVeBvZcDE1gHNbbJamU1IGSGa4TWvB21pgYckP6Km4aOD936u7fIGxrM6cNlY1vkrmkyDDQSAbmGA==}
     peerDependencies:
       react: ^18.3.0 || ^19.0.0
 
@@ -2037,15 +2046,15 @@ packages:
       '@types/react':
         optional: true
 
-  react-resource-view@0.12.0:
-    resolution: {integrity: sha512-7lsnLi0PMbuq3gmipFnP/OaTJG9y8ig8LEu1fIGZEUoLENWYa+bYhoDdQPhDeAklb/aQmC2dMAoNexHJM//qdQ==}
+  react-resource-view@1.2.2:
+    resolution: {integrity: sha512-zCeaSIWMVNOJldmt7HIDu7YVBg1upxk59KWUXZqUKNu10cqe+U7jHswrSjMIyY3Pv3xomMRag3PI80yC/zLnOA==}
     hasBin: true
     peerDependencies:
       '@tanstack/react-router': ^1.170.0
       react: ^18.3.0 || ^19.0.0
-      react-data-form: ^0.1.0
+      react-data-form: ^0.3.0
       react-dom: ^18.3.0 || ^19.0.0
-      react-mini-i18n: ^0.1.0
+      react-mini-i18n: ^0.1.0 || ^0.2.0
       resource-registry: ^0.1.0
       tailwindcss: ^4.0.0
     peerDependenciesMeta:
@@ -2094,8 +2103,8 @@ packages:
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
 
-  resource-registry@0.1.0:
-    resolution: {integrity: sha512-YX1Ns87woZym3vlVAc1+5r51mf3qrwltb9iqur2rCIRY6aIqNOaWCJX2lGSNO/bJxCc43Sbi4vFa+GM0J8scPw==}
+  resource-registry@0.1.1:
+    resolution: {integrity: sha512-Y95MIEXPgJkH4YhIVObEw7OGFXNS48jKH5DEyzNnWFHSoWfOaiVl9KIE9StnO26JzEYBKR3dfvyEGi5CVIsKJQ==}
 
   reusify@1.1.0:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
@@ -4373,7 +4382,7 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-data-form@0.1.0(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.1.0(react@19.2.7))(react@19.2.7)(resource-registry@0.1.0):
+  react-data-form@0.3.2(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.2.1(react@19.2.7))(react@19.2.7)(resource-registry@0.1.1):
     dependencies:
       '@base-ui/react': 1.8.0(@date-fns/tz@1.5.0)(@types/react@19.2.18)(date-fns@4.4.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@tiptap/extension-image': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
@@ -4393,8 +4402,8 @@ snapshots:
       react-day-picker: 9.14.0(react@19.2.7)
       react-dom: 19.2.7(react@19.2.7)
       react-easy-crop: 6.2.3(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      react-mini-i18n: 0.1.0(react@19.2.7)
-      resource-registry: 0.1.0
+      react-mini-i18n: 0.2.1(react@19.2.7)
+      resource-registry: 0.1.1
       sonner: 2.0.8(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       tailwind-merge: 3.7.0
     transitivePeerDependencies:
@@ -4428,7 +4437,7 @@ snapshots:
 
   react-is@17.0.2: {}
 
-  react-mini-i18n@0.1.0(react@19.2.7):
+  react-mini-i18n@0.2.1(react@19.2.7):
     dependencies:
       react: 19.2.7
 
@@ -4451,7 +4460,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.18
 
-  react-resource-view@0.12.0(@date-fns/tz@1.5.0)(@types/react@19.2.18)(react-data-form@0.1.0(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.1.0(react@19.2.7))(react@19.2.7)(resource-registry@0.1.0))(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.1.0(react@19.2.7))(react@19.2.7)(resource-registry@0.1.0):
+  react-resource-view@1.2.2(@date-fns/tz@1.5.0)(@types/react@19.2.18)(react-data-form@0.3.2(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.2.1(react@19.2.7))(react@19.2.7)(resource-registry@0.1.1))(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.2.1(react@19.2.7))(react@19.2.7)(resource-registry@0.1.1):
     dependencies:
       '@base-ui/react': 1.8.0(@date-fns/tz@1.5.0)(@types/react@19.2.18)(date-fns@4.4.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       class-variance-authority: 0.7.1
@@ -4463,10 +4472,10 @@ snapshots:
       jsonld-repository: 0.1.0(react@19.2.7)
       lucide-react: 0.577.0(react@19.2.7)
       react: 19.2.7
-      react-data-form: 0.1.0(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.1.0(react@19.2.7))(react@19.2.7)(resource-registry@0.1.0)
+      react-data-form: 0.3.2(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react-mini-i18n@0.2.1(react@19.2.7))(react@19.2.7)(resource-registry@0.1.1)
       react-dom: 19.2.7(react@19.2.7)
-      react-mini-i18n: 0.1.0(react@19.2.7)
-      resource-registry: 0.1.0
+      react-mini-i18n: 0.2.1(react@19.2.7)
+      resource-registry: 0.1.1
       sonner: 2.0.8(@types/react@19.2.18)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       tailwind-merge: 3.7.0
     transitivePeerDependencies:
@@ -4505,7 +4514,7 @@ snapshots:
 
   resolve-pkg-maps@1.0.0: {}
 
-  resource-registry@0.1.0:
+  resource-registry@0.1.1:
     dependencies:
       jsonld-item: 0.1.0
 
