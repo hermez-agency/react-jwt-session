@@ -173,7 +173,7 @@ Setting a bare JWT afterwards — a social sign-in, an impersonation — leaves 
 stored refresh token alone; `logout()` is what drops it.
 
 The package needs to know how to reach your API. Having no HTTP client of its own,
-it either `fetch`es two URLs:
+it can either `fetch` two URLs:
 
 ```ts
 setUserConfig({
