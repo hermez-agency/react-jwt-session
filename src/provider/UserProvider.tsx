@@ -10,6 +10,7 @@ import { LoginRequestInterface } from "@/LoginRequestInterface"
 import { isLogged } from "@/isLogged"
 import { setUserToken } from "@/UserToken"
 import { invalidateSession } from "@/loadSession"
+import { keyStorageUser, userKey } from "@/storageKeys"
 
 interface UserProviderProps {
   children: ReactNode
@@ -96,6 +97,43 @@ export const UserProvider = ({
       }
     }
   }, [user])
+
+  // Follows the session of the other tabs: the `storage` event only fires in
+  // the tabs that did not make the change. Nothing is written back here, so two
+  // tabs cannot keep waking each other up.
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    const onStorage = (event: StorageEvent) => {
+      // `key` is null when the whole storage was cleared.
+      if (
+        event.key !== null &&
+        event.key !== keyStorageUser &&
+        event.key !== userKey
+      ) {
+        return
+      }
+
+      invalidateSession()
+
+      if (!isLogged()) {
+        setUser(undefined)
+        return
+      }
+
+      const storedUser = getUserInLocalStorage()
+      if (storedUser) {
+        setUser(storedUser)
+      } else {
+        // Signed in elsewhere, profile not stored yet: fetch it.
+        hasFetched.current = true
+        refreshUser()
+      }
+    }
+
+    window.addEventListener("storage", onStorage)
+    return () => window.removeEventListener("storage", onStorage)
+  }, [])
 
   // Lets the application follow the session — attaching the user to an error
   // reporter, resetting analytics… The library stays unaware of which tool that
