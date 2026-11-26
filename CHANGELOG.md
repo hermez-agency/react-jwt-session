@@ -1,5 +1,11 @@
 # react-jwt-session
 
+## 0.3.0
+
+### Minor Changes
+
+- 5807a18: `UserProvider` suit désormais la session des autres onglets via l'événement `storage` : une déconnexion y remet `user` à `undefined`, une connexion recharge l'utilisateur.
+
 ## 0.2.1
 
 ### Patch Changes
